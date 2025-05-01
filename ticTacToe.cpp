@@ -46,6 +46,12 @@ class Game{
 
 };
 
+class Player{
+
+	public:
+		string name;
+};
+
 int main(){
 	drawBoard();
 	vector<vector<string>> b(3, vector<string>(3, " "));
@@ -60,6 +66,6 @@ int main(){
 
 		obj.takeInput(a, c, s);
 		cout << "Entered Values" << endl;
-		obj.check();
+		isGame = obj.check();
 	}
 }
